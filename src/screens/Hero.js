@@ -1,4 +1,6 @@
-import img from "../img/anna-gru-EzTGFKfEdmM-unsplash.jpg";
+// import img from "../img/anna-gru-EzTGFKfEdmM-unsplash.jpg";
+
+import img from "../img/hero-img.png";
 import { FaPlayCircle } from "react-icons/fa";
 
 export function Hero() {

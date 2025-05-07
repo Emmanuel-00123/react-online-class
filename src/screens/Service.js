@@ -1,6 +1,7 @@
-import { FaPlaneDeparture } from "react-icons/fa";
-import { IoMdMicrophone, IoMdSettings } from "react-icons/io";
-import { TiWeatherPartlySunny } from "react-icons/ti";
+import Icon1 from "../img/icon1.png";
+import Icon2 from "../img/icon2.png";
+import Icon3 from "../img/icon3.png";
+import Icon4 from "../img/icon4.png";
 
 ////////////////// SECTION SERVICES ///////////////
 export function Service() {
@@ -11,7 +12,7 @@ export function Service() {
       <SecondaryHeading>We Offer Best Services</SecondaryHeading>
       <div className="serviceBoxes">
         <div className="serviceBox">
-          <TiWeatherPartlySunny className="serviceIcon" />
+          <img src={Icon1} alt="weather-icon" />
           <ServiceBoxHeading>Calculated Weather</ServiceBoxHeading>
           <ServiceBoxDescription>
             Built Wicket longer admire do barton vanity itself do in it.
@@ -19,7 +20,7 @@ export function Service() {
         </div>
 
         <div className="serviceBox">
-          <FaPlaneDeparture className="serviceIcon" />
+          <img src={Icon2} alt="flight-icon" />
           <ServiceBoxHeading>Best Flights</ServiceBoxHeading>
           <ServiceBoxDescription>
             Engrossed listening. Park gate sell they west hard for the.
@@ -27,7 +28,7 @@ export function Service() {
         </div>
 
         <div className="serviceBox">
-          <IoMdMicrophone className="serviceIcon" />
+          <img src={Icon3} alt="mic-icon" />
           <ServiceBoxHeading>Local Events</ServiceBoxHeading>
           <ServiceBoxDescription>
             Barton vanity itself do in it. Preferd to men it engrossed
@@ -35,7 +36,7 @@ export function Service() {
           </ServiceBoxDescription>
         </div>
         <div className="serviceBox">
-          <IoMdSettings className="serviceIcon" />
+          <img src={Icon4} alt="customize-icon" />
           <ServiceBoxHeading>Customization</ServiceBoxHeading>
           <ServiceBoxDescription>
             We deliver outsourced aviation services for military customers.

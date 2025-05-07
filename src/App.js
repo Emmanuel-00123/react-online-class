@@ -7,6 +7,7 @@ import { Nav } from "./components/Nav";
 import { Hero } from "./screens/Hero";
 import ManualSlider from "./screens/Testimonials";
 import Sponsors from "./screens/Sponsors";
+import Form from "./screens/Form";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Bookings />
       <ManualSlider />
       <Sponsors />
+      <Form />
     </div>
   );
 }
