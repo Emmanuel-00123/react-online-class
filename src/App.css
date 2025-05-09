@@ -39,6 +39,7 @@
 
 .smallText {
   color: rgb(94, 98, 130);
+  font-family: "poppins";
 }
 
 .section {
@@ -67,11 +68,6 @@
   gap: 50px;
 }
 
-.logo {
-  font-size: 32px;
-  font-weight: bold;
-}
-
 .navList {
   display: flex;
   align-items: center;
@@ -84,7 +80,7 @@ a {
 }
 
 .navLink {
-  color: rgb(33, 40, 50);
+  color: #212832;
   font-size: 16px;
   font-weight: 600;
   transition: color 0.2s ease;
@@ -131,13 +127,28 @@ a {
 .primaryHeading {
   margin-bottom: 8px;
   font-size: 90px;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: "Volkhov", "DM Serif Display", cursive;
 
   line-height: 1;
   text-align: left;
   letter-spacing: 1px;
   color: rgba(13, 13, 56, 0.877);
+  position: relative;
 }
+
+.primaryHeading:before {
+  content: "";
+  position: absolute;
+  right: 0.9375rem;
+  top: 5rem;
+  width: 20rem;
+  height: 0.8125rem;
+  background-image: url("../src/img/hero-shape2.svg");
+  background-size: contain;
+  z-index: -1;
+}
+
 .headingDescription {
   margin-bottom: 10px;
   margin-right: 100px;
@@ -198,6 +209,17 @@ a {
   margin: 0px 32px 0px 32px;
 } */
 
+.sectionService {
+  position: relative;
+}
+
+.shapeImg {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  margin-right: 70px;
+}
+
 .serviceLittleHeading {
   font-size: 18px;
   line-height: 1.2;
@@ -245,6 +267,21 @@ a {
 }
 
 /* ////////// SECTION DESTINATION /////////// */
+
+.shapeDestination {
+  position: relative;
+}
+.destinationShapeImg {
+  position: absolute;
+  bottom: -2rem;
+  right: 2rem;
+}
+
+.destinationShapeImg img {
+  position: relative;
+  z-index: -9;
+}
+
 .img {
   width: 400px;
   height: 400px;
@@ -438,10 +475,18 @@ a {
   border-radius: 10px;
   position: relative;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  /* position: relative; */
 }
 
 .testimonial {
   transition: opacity 0.5s ease-in-out;
+}
+
+.testimonial-img {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 .testimonial-text {
@@ -504,7 +549,6 @@ a {
 /* ////////// SECTION FORM /////////// */
 .sectionForm {
   padding: 32px 64px;
-  /* background-color: blue; */
   margin: 0px 32px 70px 32px;
 }
 
@@ -517,6 +561,23 @@ a {
   padding: 64px;
   background-color: rgba(223, 215, 249, 0.199);
   border-radius: 129px 20px 20px 20px;
+  position: relative;
+}
+
+.messageIcon {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: purple;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .subInfo {
@@ -561,4 +622,96 @@ a {
   background-color: rgba(240, 62, 62, 0.849);
 }
 
-/* ADD CODE TO GIT HUB */
+/* ////////// SECTION FOOTER /////////// */
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 0px 32px 70px 32px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 64px;
+}
+
+.footerLogoBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerLogo {
+  font-size: 48px;
+  color: rgba(13, 13, 56, 0.877);
+}
+
+.footerLogoText {
+  font-size: 15px;
+}
+
+.footerHeadBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerLink {
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+.footerLink:hover {
+  color: orangered;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.socialIcon {
+  font-size: 32px;
+  background-color: #fffefe;
+  color: #080809;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1) !important;
+  transition: background-color 0.2s ease;
+}
+
+.iconFB:hover {
+  background-color: rgba(38, 38, 112, 0.753);
+  color: #fffefe;
+}
+
+.iconIG:hover {
+  background-color: rgba(255, 0, 170, 0.795);
+  color: #fffefe;
+}
+
+.iconTW:hover {
+  background-color: rgba(0, 0, 255, 0.733);
+  color: #fffefe;
+}
+
+.storeIcons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.rights {
+  font-size: 15px;
+  text-align: center;
+}

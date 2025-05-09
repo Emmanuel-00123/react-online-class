@@ -1,8 +1,10 @@
+import logoImg from "../img/logo.svg";
+
 export function Nav() {
   return (
     <nav className="nav">
       <div>
-        <p className="logo">Jadoo</p>
+        <img src={logoImg} alt="jadoo-logo" className="logo" />
       </div>
       <div>
         <li className="navList">

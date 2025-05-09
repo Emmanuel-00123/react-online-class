@@ -1,9 +1,13 @@
 import { MdOutlineMailOutline } from "react-icons/md";
+import { FaPaperPlane } from "react-icons/fa";
 
 function Form() {
   return (
     <div className="sectionForm">
       <div className="sectionFormBox">
+        <div className="messageIcon">
+          <FaPaperPlane className="icon" />
+        </div>
         <h2 className="subInfo">
           Subscribe to get information, latest news and other interesting offers
           about Cobham

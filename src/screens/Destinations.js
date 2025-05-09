@@ -3,10 +3,12 @@ import Img1 from "../img/david-kohler-VFRTXGw1VjU-unsplash.jpg";
 import Img2 from "../img/showkat-chowdhury-EEURnHmDVCk-unsplash.jpg";
 import Img3 from "../img/alex-vasey-3lxrM5yvkcI-unsplash.jpg";
 import { IoAirplaneSharp } from "react-icons/io5";
+import ShapeImg from "../img/destination-shape.svg";
+
 /////////////// SECTION TOP SELLING ///////////////
 export function Destinations() {
   return (
-    <div className="section">
+    <div className="section shapeDestination">
       <LittleHeading>Top Selling</LittleHeading>
       <SecondaryHeading>Top Destinations</SecondaryHeading>
       <div className="destinationBoxes">
@@ -39,6 +41,10 @@ export function Destinations() {
             </div>
             <Duration>28 Days Trip</Duration>
           </div>
+        </div>
+
+        <div className="destinationShapeImg">
+          <img src={ShapeImg} alt="shape-pic" />
         </div>
       </div>
     </div>

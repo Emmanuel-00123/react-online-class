@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { LittleHeading, SecondaryHeading } from "./Service";
-// import "./ManualSlider.css";
+import Img1 from "../img/uifaces-popular-image (2).jpg";
+import Img2 from "../img/uifaces-popular-image (1).jpg";
+import Img3 from "../img/uifaces-popular-image.jpg";
+
+const Images = [Img1, Img2, Img3];
 
 const Testimonials = [
   {
@@ -45,8 +49,14 @@ function ManualSlider() {
         <LittleHeading>Testimonials</LittleHeading>
         <SecondaryHeading>What People Say About Us.</SecondaryHeading>
       </div>
+
       <div className="manual-slider">
         <div className="testimonial">
+          <img
+            src={Images[currentIndex]}
+            alt="pic-of-user"
+            className="testimonial-img"
+          />
           <p className="testimonial-text smallText">
             “{Testimonials[currentIndex].text}”
           </p>

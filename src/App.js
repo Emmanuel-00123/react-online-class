@@ -8,6 +8,7 @@ import { Hero } from "./screens/Hero";
 import ManualSlider from "./screens/Testimonials";
 import Sponsors from "./screens/Sponsors";
 import Form from "./screens/Form";
+import Footer from "./screens/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <ManualSlider />
       <Sponsors />
       <Form />
+      <Footer />
     </div>
   );
 }

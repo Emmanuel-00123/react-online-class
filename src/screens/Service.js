@@ -2,12 +2,14 @@ import Icon1 from "../img/icon1.png";
 import Icon2 from "../img/icon2.png";
 import Icon3 from "../img/icon3.png";
 import Icon4 from "../img/icon4.png";
+import ShapeImg from "../img/shape.svg";
 
 ////////////////// SECTION SERVICES ///////////////
 export function Service() {
   return (
     // <div className="sectionService">
-    <div className="section">
+    <div className="section sectionService">
+      <img src={ShapeImg} alt="side-pic" className="shapeImg" />
       <LittleHeading>CATEGORY</LittleHeading>
       <SecondaryHeading>We Offer Best Services</SecondaryHeading>
       <div className="serviceBoxes">
